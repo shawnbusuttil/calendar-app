@@ -1,0 +1,25 @@
+.modal {
+	top: 50%;
+	left: 50%;
+	width: 40%;
+	opacity: 0;
+	z-index: 500;
+	padding: 16px;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease-out;
+	box-shadow: 1px 1px 3px #222;
+	border: 1px solid #ccc;
+	background-color: white;
+	
+	&.open {
+		transform: translate(-50%, -50%);
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1024px) {
+	.modal {
+		width: 90%;
+	}
+}

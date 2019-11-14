@@ -1,0 +1,31 @@
+.reminder {
+    padding: 20px;
+    min-height: 100px;
+    background-color: #fff;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 20px;
+    }
+
+    &-content {
+        height: 100%;
+
+        textarea {
+            resize: none;
+            margin-top: -2px;
+        }
+    }
+
+    .reminder-footer {
+        .button {
+            margin-bottom: 0;
+
+            + .button {
+                margin-left: 5px;
+            }
+        }
+    }
+}
